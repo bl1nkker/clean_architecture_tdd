@@ -1,0 +1,6 @@
+{
+    "text":"Test Text with double number",
+    "number":1.40,
+    "found": true,
+    "type":"trivia"
+} 
