@@ -120,13 +120,10 @@ class MockNumberTriviaLocalDatasource extends _i1.Mock
 ///
 /// See the documentation for Mockito's code generation for more information.
 class MockNetworkInfo extends _i1.Mock implements _i6.NetworkInfo {
-  MockNetworkInfo() {
-    _i1.throwOnMissingStub(this);
-  }
-
   @override
   _i4.Future<bool> get isConnected => (super.noSuchMethod(
         Invocation.getter(#isConnected),
         returnValue: _i4.Future<bool>.value(false),
+        returnValueForMissingStub: _i4.Future<bool>.value(false),
       ) as _i4.Future<bool>);
 }
