@@ -21,7 +21,7 @@ void main() {
   late NumberTriviaRemoteDatasource mockNumberTriviaRemoteDatasource;
   late NumberTriviaLocalDatasource mockNumberTriviaLocalDatasource;
   late NetworkInfo mockNetworkInfo;
-  setUp((() {
+  setUp(() {
     mockNumberTriviaRemoteDatasource = MockNumberTriviaRemoteDatasource();
     mockNumberTriviaLocalDatasource = MockNumberTriviaLocalDatasource();
     mockNetworkInfo = MockNetworkInfo();
@@ -29,7 +29,7 @@ void main() {
         remoteDatasource: mockNumberTriviaRemoteDatasource,
         localDatasource: mockNumberTriviaLocalDatasource,
         networkInfo: mockNetworkInfo);
-  }));
+  });
   void runTestsOnline(Function body) {
     group('if the device is offline', () {
       setUp(() {
